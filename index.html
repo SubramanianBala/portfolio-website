@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Personal Portfolio Website</title>
+     <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+</head>
+<body >
+  <div id="header">
+    <div class="container">
+      <nav id="sidemenu">
+        <ul>
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>  
+      </nav>      
+      <div class="header-text" data-aos="fade-down" data-aos-duration="1100">
+        <h1>I'm <span>Balasubramanian</span></h1>
+        <p>Full Stack Developer</p>
+      </div>              
+    </div>
+  </div>
+
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1" data-aos="fade-right" data-aos-duration="1100">
+          <img src="images/about.jpeg" alt="About Image">
+        </div>
+        <div class="about-col-2" data-aos="fade-left" data-aos-duration="1100">
+          <h1 class="sub-title">About Me</h1>
+          <p>My name is Balasubramanian. Welcome to my portfolio! I am a passionate Full Stack Developer with a love for crafting elegant and efficient web applications. My journey into the world of technology began at a young age, and since then, I have honed my skills in both front-end and back-end development. I enjoy transforming complex problems into user-friendly solutions and continuously strive to learn and improve. Whether working on a collaborative team project or diving into individual coding challenges, I am driven by a commitment to excellence and innovation.</p>
+
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('skills')">Technical Skills</p>
+            <p class="tab-links" onclick="opentab('education')">Education</p>
+            <p class="tab-links" onclick="opentab('certifications')">Certifications</p>
+          </div>
+
+          <div class="tab-content active-tab" id="skills">
+            <ul>
+              <li><span>UI/UX</span><br>Designing web interfaces</li>
+              <li><span>Fullstack Development</span><br>With the knowledge of HTML, CSS, JavaScript, Python, and SQL</li>
+            </ul>
+          </div>
+
+          <div class="tab-content" id="education">
+            <ul>
+              <li><span>2020-2024</span><br>Shanmuganathan Engineering College, BE Graduated in CSE</li>
+            </ul>
+          </div>
+          <div class="tab-content" id="certifications">
+            <ul>
+              <li><span>2023</span><br>Full Stack Development with Python in Guvi</li>
+              <li><span>2022</span><br>Android Application Development in Pantech eLearning</li>
+              <li><span>2023</span><br>Workshop on Front End Development (Express JS)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+<!-- -------services---------- -->
+
+<div id="services">
+  <div class="container">
+    <h1 class="sub-title">My services</h1>
+    <div class="services-list">
+      <div>
+        <i class="fa-solid fa-window-maximize"></i>
+        <h2>Custom Web Design</h2>
+        <p>Creating visually appealing and user-friendly web designs tailored to your brand and business needs</p>
+        <a href="#">Learn more</a>
+      </div>
+      <div>
+        <i class="fa-brands fa-edge"></i>
+        <h2>Full Stack Development</h2>
+        <p>Developing complete web applications from front-end to back-end, ensuring seamless performance and functionality</p>
+        <a href="#">Learn more</a>
+      </div>
+      <div>
+        <i class="fa-solid fa-database"></i>
+        <h2>Database management</h2>
+        <p>Efficiently managing and organizing your data with robust database solutions, ensuring data integrity and security</p>
+        <a href="#">Learn more</a>
+      </div>
+      <div>
+        <i class="fa-solid fa-mobile-alt"></i>
+        <h2>Responsive Design</h2>
+        <p>Ensuring your website looks great and functions perfectly on all devices, from desktops to mobile phones.</p>
+        <a href="#">Learn more</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- -------portfolio----------- -->
+<div id="portfolio">
+  <div class="container">
+    <h1 class="sub-title">My works</h1>
+    <div class="work-list">
+
+      <div class="work">
+        <img src="images/webgame.jpeg" >
+        <div class="layer">
+          <h3>Simple Game Website</h3>
+          <p>Simple Rock-Paper-Scissor game which designed by JavaScript</p>
+          <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+      </div>
+
+      <div class="work">
+        <img src="images/selfweb.jpeg" >
+        <div class="layer">
+          <h3>Self Websites</h3>
+          <p>Interactive websites for my training purpose which are created by HTML and CSS</p>
+          <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+      </div>
+
+      <div class="work">
+        <img src="images/projects.jpeg" >
+        <div class="layer">
+          <h3>Python Projects</h3>
+          <p>Stock prediction and Fire detection Projects done with Python</p>
+          <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+      </div>
+
+    </div>
+    <a class="btn" href="#">see more</a>
+  </div>
+</div>
+
+
+<!---- --------contact------ -->
+<div id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="contact-left">
+
+          <h1 class="sub-title">contact me</h1>
+          <p><i class="fa-solid fa-envelope"></i>balakk3456gmail.com</p>
+          <p><i class="fa-solid fa-phone-volume"></i>+637-989-2573</p>
+
+          <div class="social-icons">
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+          </div>
+          <a href="images/my resume.pdf" download class="btn btn2">Download CV</a>     <!--already have this 'btn' class so we add 'btn2'-->
+        </div>
+
+
+        <div class="contact-right">
+          <form name="submit-to-google-sheet">
+            <input type="text" name="name" placeholder="your name"  required>
+            <input type="email" name="email" placeholder="your email"  required>
+            <textarea name="message" rows="6" placeholder="your message"></textarea>
+            <button class="btn btn2" type="submit">submit</button>
+          </form>
+          <span id="message"></span>
+        </div>
+
+      </div>
+    </div>
+    <div class="copyright">
+      <P><i class="fa-solid fa-copyright"></i>copyright by me</P>
+    </div>
+</div>
+
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-content");
+
+    function opentab(tabname) {
+      for (var tablink of tablinks) {
+          tablink.classList.remove("active-link");
+      }
+      for (var tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+      }
+      event.currentTarget.classList.add("active-link");
+      document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+<script>
+  var sidemenu = document.getElementById("sidemenu");
+
+  function openmenu(){
+    sidemenu.style.left = "0";  // Changed from right to left
+  }
+
+  function closemenu(){
+    sidemenu.style.left = "-150px";  // Changed from right to left
+  }
+
+</script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      AOS.init();
+    });
+  </script>
+
+  <script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbxO0Oz1zTI24LxDCHsgmaz3FZ0_DpMFn027Vb_BBm6Xip0ygwrNEhCpEz7uexkWfQTx/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const message = document.getElementById("message")
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        message.innerHTML = "Message sent successfully"
+        setTimeout(function(){
+          message.innerHTML = ""
+        },2000)
+        form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+
+</body>
+</html>
