@@ -10,7 +10,7 @@ html {
 }
 
 body {
-  background: black;
+  background: rgb(18, 18, 18);
   color: white;
 }
 
@@ -66,8 +66,8 @@ nav ul li a::after {
 }
 
 nav ul li a:hover {
-  color: #50ffff; /* Change this to the desired color */
-  transform: scale(1.1); /* Adjust the scale value as needed */
+  color: #50ffff; 
+  transform: scale(1.1); 
 }
 
 nav ul li a:hover::after {
@@ -94,10 +94,12 @@ nav ul li a:hover::after {
 /* ---------------about--------------------- */
 
 #about{
-  padding: 80px 0;
+  padding: 70px 0;
   color:rgb(156, 151, 151);
 }
-
+.justified {
+  text-align: justify;
+}
 .row{
   display: flex;
   justify-content: space-between;
@@ -158,7 +160,7 @@ nav ul li a:hover::after {
 }
 .tab-content ul li span{
   font-weight: 300;
-  color:#3156d1;
+  color:#335fee;
   font-size: 14px;
   
 }
@@ -174,12 +176,13 @@ nav ul li a:hover::after {
 
 /* ---------------services--------------------- */
 #services{
-  padding: 30px 0;
+  padding: 20px 0;
 }
+ 
 
 .services-list {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* Ensure 4 columns */
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 40px;
   margin-top: 40px;
 }
@@ -216,11 +219,12 @@ nav ul li a:hover::after {
 
 /* -------------portfolio------------ */
 #portfolio{
-  padding: 50px 0;
+  padding: 60px 0;
+  margin-bottom: 40px;
 }
 .work-list{
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));  /*auto fill-many colmn as possibele---minmax--mininum and maximum width of the column ( 1fr one fraction of the window) */ 
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));  /*auto fill-many colmn as possibele---minmax--mininum and maximum width of the column ( 1fr one fraction of the window) */ 
   gap: 40px;
   margin-top: 40px;
 }
@@ -269,13 +273,13 @@ nav ul li a:hover::after {
   height: 60px;
   border-radius: 50%;
   text-align: center;
-  display: flex; /* Use flexbox */
-  align-items: center; /* Vertically center */
-  justify-content: center; /* Horizontally center */
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
 }
 
 .work:hover img{
-  transform: scale(1.1);  /* 1-original size....1.1-110% of size */
+  transform: scale(1.1); 
 }
 .work:hover .layer{
   height: 100%;
@@ -369,79 +373,68 @@ form .btn2{
 
 /* -----------css for small screen------------*/
 
+/* General styles for the menu (mobile only) */
 @media (max-width: 768px) {
-  /* Adjust container padding */
-  .container {
-    padding: 10px 5%;
+  #sidemenu.hidden {
+    display: none;
   }
 
-  /* Header adjustments */
-  .header-text {
-    margin-top: 30%;
+  /* Style for the menu toggle button */
+  .menu-icon {
     font-size: 24px;
+    cursor: pointer;
+    color: white;
   }
 
-  .header-text h1 {
-    font-size: 40px;
+  /* Style for the close icon */
+  .close-icon {
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
   }
 
-  .header-text p {
-    font-size: 20px;
-  }
-
-  /* Navigation adjustments */
-  nav ul li {
-    display: block;
-    text-align: center;
-    margin: 10px 0;
-  }
-
-  nav ul li a {
-    font-size: 16px;
-  }
-
-  /* About section adjustments */
-  .row {
-    flex-direction: column;
-  }
-
-  .about-col-1,
-  .about-col-2 {
-    flex-basis: 100%;
-    margin-bottom: 20px;
-  }
-
-  /* Services section adjustments */
-  .services-list {
-    grid-template-columns: 1fr;
-    gap: 20px;
-  }
-
-  .services-list div {
+  /* Style for the side menu */
+  #sidemenu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    background-color: #3156d1;
+    color: white;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
     padding: 20px;
-    font-size: 14px;
   }
 
-  .services-list div h2 {
-    font-size: 24px;
+  /* When the menu is visible */
+  #sidemenu.active {
+    transform: translateX(0);
   }
 
-  /* Portfolio section adjustments */
-  .work-list {
-    grid-template-columns: 1fr;
-    gap: 20px;
+  /* Style the menu items */
+  #sidemenu ul {
+    list-style: none;
+    padding: 0;
   }
 
-  /* Contact section adjustments */
-  .contact-left,
-  .contact-right {
-    flex-basis: 100%;
-    margin-bottom: 20px;
+  #sidemenu ul li {
+    margin: 20px 0;
   }
 
-  /* Footer adjustments */
-  .copyright {
-    font-size: 14px;
-    padding: 15px 0;
+  #sidemenu ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+    padding: 10px;
+    transition: background 0.3s ease;
+  }
+
+  #sidemenu ul li a:hover {
+    background: rgba(255, 255, 255, 0.2);
   }
 }
